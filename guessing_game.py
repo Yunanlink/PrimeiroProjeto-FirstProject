@@ -11,7 +11,7 @@ def back_menu():
     frame_guessing_game.pack_forget() # Esconde a tela do guessing game
     frame_start.pack(expand=True, fill='both') # Mostra a tela inicial
 
-
+# Define número aleatório e número de chances
 secret_number = random.randint(1,100)
 chances = 10
 
@@ -118,7 +118,7 @@ def update_texts():
     #btn_en.place_forget()
     #btn_pt.place_forget()
 
-    # Botão START com fonte retro e imagem
+    # Botão START 
     img_start = Image.new("RGB", (400, 50), color="#4169E1")
     draw_start = ImageDraw.Draw(img_start)
     font_start = ImageFont.truetype("PressStart2P-Regular.ttf", 18)
@@ -127,7 +127,7 @@ def update_texts():
     btn_start.config(image=img_start_tk, height=50, width=400)
     btn_start.image = img_start_tk
 
-    # Botão QUIT com fonte retro e imagem
+    # Botão QUIT 
     img_quit = Image.new("RGB", (400, 50), color="#8B0000")
     draw_quit = ImageDraw.Draw(img_quit)
     font_quit = ImageFont.truetype("PressStart2P-Regular.ttf", 18)
