@@ -247,4 +247,7 @@ label_result.pack(pady=10)
 
 restart_button = Button(frame_guessing_game, text="RESTART", command=start_game, bg="#00CED1", relief="flat", font=("PressStart2P", 15), height=2, width=20)
 
+label_name = Label(window, text= "by: Yunanlink (Luan Victor)", font= 30)
+label_name.place(relx=0.9, y=550, anchor='n')
+
 window.mainloop()
